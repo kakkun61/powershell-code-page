@@ -1,0 +1,17 @@
+name: install
+
+on: [push, pull_request]
+
+jobs:
+  test-powershell:
+    name: Install it on Windows
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        path: code-page
+    - name: Install it
+      shell: pwsh
+      run: |
+        $ErrorActionPreference = 'Stop'
+        Import-Module .\code-page
