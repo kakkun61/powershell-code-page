@@ -225,7 +225,7 @@ function Set-CodePage() {
         $id = $candidates[$_].Identifier
         $name = $candidates[$_].'.NET Name'
         $info = $candidates[$_].'Additional information'
-        Write-Host "$(Add-Spaces -Message $_ -Width 3 -Side Left): $(Add-Spaces -Message $id -Widht 5 -Side Left)    $(Add-Spaces -Message $name -Width 23 -Side Right)    $info"
+        Write-Host "$(Add-Spaces -Message $_ -Width 3 -Side Left): $(Add-Spaces -Message $id -Width 5 -Side Left)    $(Add-Spaces -Message $name -Width 23 -Side Right)    $info"
     }
     $choice = Read-Host "Enter the number which you select $(if (0 -eq $max) { '[0]' } else { "[0-$max]" })"
     Invoke-Chcp -CodePage $candidates[$choice] -DryRun $DryRun
