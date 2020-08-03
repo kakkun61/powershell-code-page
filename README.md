@@ -2,7 +2,7 @@
 
 *NO NEED TO REMEMBER 65001*
 
-[![GitHub Actions: install](https://github.com/kakkun61/powershell-code-page/workflows/install/badge.svg)](https://github.com/kakkun61/powershell-code-page/actions?query=workflow%3Ainstall) [![GitHub Actions: lint](https://github.com/kakkun61/powershell-code-page/workflows/lint/badge.svg)](https://github.com/kakkun61/powershell-code-page/actions?query=workflow%3Alint) [![PowerShell Gallery](https://img.shields.io/powershellgallery/p/code-page.svg)](https://www.powershellgallery.com/packages/code-page/) [![Join the chat at https://gitter.im/powershell-code-page/community](https://badges.gitter.im/powershell-code-page/community.svg)](https://gitter.im/powershell-code-page/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub Actions: install](https://github.com/kakkun61/powershell-code-page/workflows/install/badge.svg)](https://github.com/kakkun61/powershell-code-page/actions?query=workflow%3Ainstall) [![GitHub Actions: lint](https://github.com/kakkun61/powershell-code-page/workflows/lint/badge.svg)](https://github.com/kakkun61/powershell-code-page/actions?query=workflow%3Alint) [![PowerShell Gallery](https://img.shields.io/powershellgallery/p/code-page.svg)](https://www.powershellgallery.com/packages/code-page/) [![Join the chat at https://gitter.im/powershell-code-page/community](https://badges.gitter.im/powershell-code-page/community.svg)](https://gitter.im/powershell-code-page/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red?logo=GitHub)](https://github.com/sponsors/kakkun61)
 
 ## Usage
 
