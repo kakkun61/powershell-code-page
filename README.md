@@ -6,22 +6,7 @@
 
 ## Usage
 
-```
-> Set-CodePage japanese
-  0:   932    shift_jis                  ANSI/OEM Japanese; Japanese (Shift-JIS)
-  1: 10001    x-mac-japanese             Japanese (Mac)
-  2: 20290    IBM290                     IBM EBCDIC Japanese Katakana Extended
-  3: 20932    EUC-JP                     Japanese (JIS 0208-1990 and 0212-1990)
-  4: 50220    iso-2022-jp                ISO 2022 Japanese with no halfwidth Katakana; Japanese (JIS)
-  5: 50221    csISO2022JP                ISO 2022 Japanese with halfwidth Katakana; Japanese (JIS-Allow 1 byte Kana)
-  6: 50222    iso-2022-jp                ISO 2022 Japanese JIS X 0201-1989; Japanese (JIS-Allow 1 byte Kana - SO/SI)
-  7: 50930                               EBCDIC Japanese (Katakana) Extended
-  8: 50931                               EBCDIC US-Canada and Japanese
-  9: 50939                               EBCDIC Japanese (Latin) Extended and Japanese
- 10: 51932    euc-jp                     EUC Japanese
-Enter the number which you select [0-10]: 0
-chcp 932
-```
+https://user-images.githubusercontent.com/282593/128813634-aaa08d42-5c3e-4e93-9ef5-19d5eb7dd018.mp4
 
 ## Install
 
