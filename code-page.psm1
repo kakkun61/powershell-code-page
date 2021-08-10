@@ -146,7 +146,7 @@ function Invoke-Chcp {
 function Set-CodePage() {
     [CmdletBinding()]
     param (
-        [Parameter(Mandatory)][String]$Search,
+        [String]$Search = '*',
         [ValidateSet("All", "Identifier", "Name", "Information")][String]$Target = $all,
         [ValidateSet("Default", "Exact", "Fuzzy")][String]$Way = $def,
         [Switch]$DryRun = $false
@@ -220,15 +220,19 @@ function Set-CodePage() {
         return
     }
 
-    $max = $candidates.Length - 1
-    (0 .. $max) | ForEach-Object {
-        $id = $candidates[$_].Identifier
-        $name = $candidates[$_].'.NET Name'
-        $info = $candidates[$_].'Additional information'
-        Write-Host "$(Add-Spaces -Message $_ -Width 3 -Side Left): $(Add-Spaces -Message $id -Width 5 -Side Left)    $(Add-Spaces -Message $name -Width 23 -Side Right)    $info"
+    $choice = Show-Menu -MenuItems $candidates -MenuItemFormatter {
+        param ($c)
+            $id = $c.Identifier
+            $name = $c.'.NET Name'
+            $info = $c.'Additional information'
+            "$(Add-Spaces -Message $id -Width 5 -Side Left)    $(Add-Spaces -Message $name -Width 23 -Side Right)    $info"
     }
-    $choice = Read-Host "Enter the number which you select $(if (0 -eq $max) { '[0]' } else { "[0-$max]" })"
-    Invoke-Chcp -CodePage $candidates[$choice] -DryRun $DryRun
+
+    if ($null -eq $choice) {
+        return
+    }
+
+    Invoke-Chcp -CodePage $choice -DryRun $DryRun
 }
 
 # .SYNOPSIS

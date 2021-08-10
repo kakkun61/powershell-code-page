@@ -12,7 +12,7 @@
 RootModule = 'code-page.psm1'
 
 # このモジュールのバージョン番号です。
-ModuleVersion = '1.1'
+ModuleVersion = '1.2'
 
 # サポートされている PSEditions
 # CompatiblePSEditions = @()
@@ -51,7 +51,7 @@ PowerShellVersion = '3.0'
 # ProcessorArchitecture = ''
 
 # このモジュールをインポートする前にグローバル環境にインポートされている必要があるモジュール
-RequiredModules = @()
+RequiredModules = @('PSMenu')
 
 # このモジュールをインポートする前に読み込まれている必要があるアセンブリ
 # RequiredAssemblies = @()
