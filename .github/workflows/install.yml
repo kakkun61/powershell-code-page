@@ -10,6 +10,11 @@ jobs:
     - uses: actions/checkout@v1
       with:
         path: code-page
+    - name: Install PSMenu
+      shell: pwsh
+      run: |
+        $ErrorActionPreference = 'Stop'
+        Install-Module PSMenu -Force
     - name: Install it
       shell: pwsh
       run: |
